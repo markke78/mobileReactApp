@@ -1,0 +1,303 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: none;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(12, 12, 12);
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.Icon-logo {
+  height: 100px;
+  width: 100px;
+  animation: Icon-logo-spin infinite 20s linear;
+  filter: invert(20%) sepia(100%) saturate(50%) hue-rotate(0deg)
+    brightness(104%) contrast(100%);
+  transform: scale(1, 1);
+  transition: all 1s ease-out;
+}
+
+.Icon-logo:hover {
+  filter: invert(0%) sepia(0%) saturate(100%) hue-rotate(0deg) brightness(100%)
+    contrast(100%);
+  cursor: pointer;
+  transform: scale(1.2, 1.2);
+}
+
+/* @keyframes orbit {
+  to {
+    stroke-dashoffset: 50px;
+  }
+}
+@keyframes Icon-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+.gameArea {
+  position: relative;
+  width: 100%;
+  /* margin-top: 60px; */
+}
+.board {
+  position: absolute;
+  float: left;
+  width: 60%;
+  background: none;
+  left: 30px;
+  top: 80px;
+  /* margin: -400px; */
+}
+.historyBtn {
+  position: absolute;
+  top: 0%;
+  right: -35%;
+  width: 30%;
+}
+.historyBtn > button {
+  width: 100%;
+}
+.box {
+  position: relative;
+  display: inline-block;
+  width: 30%;
+  padding-top: 30%;
+  background: none;
+  margin: 5px;
+}
+
+.OX {
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.banner {
+  background-color: lightskyblue;
+  text-align: center;
+  height: 5px;
+}
+.money {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.money2 {
+  background-color: #f44336;
+}
+
+.remove {
+  background-color: #008cba;
+}
+
+#int1 {
+  width: 385px;
+  height: 30px;
+  margin-top: 5px;
+}
+
+.money4 {
+  background-color: yellow;
+  width: 385px;
+}
+
+.money5 {
+  background-color: rgb(89, 84, 95);
+}
+
+.left {
+  background-color: rgb(153, 153, 216);
+  width: 32%;
+  float: left;
+  margin-right: 5px;
+}
+
+.right {
+  background-color: rgb(235, 236, 144);
+  width: 67%;
+  float: left;
+  border-left: solid black;
+  margin-left: 5px;
+  line-height: 5px;
+}
+
+.acc {
+  border: solid rgb(81, 212, 20);
+  border-radius: 10px;
+  width: 97%;
+  margin: 10px;
+  background-color: rgb(202, 241, 110);
+  box-shadow: gray 4px 4px 5px;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  float: left;
+  border: solid black;
+}
+
+.accountHead {
+  width: 95%;
+}
+
+.leftInput {
+  margin-bottom: 5px;
+}
+
+.leftArea {
+  line-height: 5px;
+}
+
+.card {
+  border: solid rgb(7, 78, 13);
+  border-width: 5px;
+  height: auto;
+  padding: center;
+  border-radius: 30px;
+  width: 1600px;
+  font-size: 18px;
+  color: white;
+  background: rgba(7, 160, 53, 0.5);
+}
+.cardInside {
+  margin: 10px;
+  width: auto;
+  padding: center;
+}
+
+.hr {
+  border: 0;
+  height: 1px;
+  width: 95%;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+.int {
+  margin-top: 10px;
+}
+
+.cityList {
+  height: auto;
+  padding: center;
+  text-align: center;
+  border-radius: 30px;
+  margin-top: 10px;
+  color: rgb(0, 0, 0);
+}
+
+.cityList1 {
+  height: auto;
+  padding: center;
+  text-align: center;
+  border-radius: 30px;
+  margin-top: 10px;
+  color: rgb(80, 80, 85);
+  text-shadow: -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000, 2px 2px 2px black;
+}
+
+.even {
+  background: rgb(218, 216, 216);
+}
+.odd {
+  background: rgb(245, 245, 178);
+
+  margin-top: -20px;
+}
+.city {
+  margin-bottom: 5px;
+  text-align: left;
+  width: 100%;
+  height: auto;
+  font-size: 25px;
+  color: rgb(3, 56, 3);
+  height: 35px;
+}
+
+.removeCity {
+  float: right;
+  margin-right: 40px;
+}
+
+.marioWorld {
+  background-color: rgba(211, 107, 9, 0.5);
+  height: 100px;
+  color: rgb(248, 244, 9);
+  font-style: italic;
+  margin-bottom: 10px;
+  text-align: center;
+  line-height: 100px;
+  text-shadow: -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000, 2px 2px 2px black;
+}
+
+.bg {
+  top: 0;
+  left: 0;
+  background-size: cover;
+  position: fixed;
+}
+.bg img {
+  /* top: 0;
+  left: 0;
+  margin: auto;
+  min-height: 100%;
+  min-width: 100%;
+  z-index: -999; */
+}
+
+.iconArea {
+  background-color: rgba(241, 99, 106, 0.5);
+}
+
+.status {
+  width: 500px;
+  margin: auto;
+  line-height: 150px;
+  text-align: center;
+  font-family: "微軟正黑體", "arial black", sans-serif;
+  color: rgb(252, 249, 88);
+  text-align: center;
+
+  margin: 5px 5px 5px 5px;
+  font-size: 30px;
+
+  text-shadow: -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000, 2px 2px 2px black;
+}
+
+.linkHead {
+  width: 1000px;
+  border: solid rgb(87, 20, 212);
+  background-color: cadetblue;
+}
